@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar"
 import { Product } from "./components/Product"
 import { Cart } from './components/Cart'
-import { Error } from "./components/Error"
 
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </div>
